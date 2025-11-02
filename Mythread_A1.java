@@ -16,8 +16,8 @@ class MyThread_extend extends Thread {
         try {
             // Loop to simulate work
             for (int i = 1; i <= 5; i++) {
-                System.out.println("Running in: " + Thread.currentThread().getName() + " → step " + i);
-                Thread.sleep(5000); // pause for 0.5 sec
+                System.out.println(i +" " +Thread.currentThread().getName() + " running ");
+                Thread.sleep(2500); // pause for 0.5 sec
             }
             System.out.println(Thread.currentThread().getName() + " finished work.");
         } catch (InterruptedException e) {
