@@ -49,6 +49,49 @@ This program demonstrates multithreading in Java. It includes examples of creati
 
 ---
 
+### [Mythread_A1.java](./Mythread_A1.java)
+**Concepts Covered:**
+- **Multithreading:**
+  - Creating threads via `Thread` or `Runnable`.
+  - Using `sleep()` and `join()` to coordinate threads.
+
+**Description:**
+An example that demonstrates basic thread creation and lifecycle management in Java. Useful for showing how multiple threads can run concurrently.
+
+---
+
+### [Mythread_A2.java](./Mythread_A2.java)
+**Concepts Covered:**
+- **Multithreading:**
+  - Synchronization basics and race conditions.
+
+**Description:**
+An example that demonstrates synchronization between threads and highlights potential race conditions when shared resources are not protected.
+
+---
+
+### [Polymorphism.java](./Polymorphism.java)
+**Concepts Covered:**
+- **Polymorphism:**
+  - Method Overloading.
+  - Method Overriding and dynamic dispatch.
+
+**Description:**
+This program demonstrates polymorphism in Java by showing both compile-time (method overloading) and runtime (method overriding) polymorphism.
+
+---
+
+### [Exception.java](./Exception.java)
+**Concepts Covered:**
+- **Exception Handling:**
+  - Checked and unchecked exceptions.
+  - try-catch-finally blocks and custom exceptions.
+
+**Description:**
+Demonstrates how Java handles exceptions, how to throw and catch exceptions, and best practices for error handling.
+
+---
+
 ## C++ Files
 
 ### [Student.cpp](./Student.cpp)
@@ -152,5 +195,34 @@ This program demonstrates polymorphism in C++ by implementing function overloadi
 ## Additional Notes
 - Ensure that Java and a C++ compiler (like GCC) are installed and properly configured on your system.
 - The examples are designed to be simple and focus on demonstrating OOP concepts.
+
+## Theory — Java
+
+Object-Oriented Programming (OOP) in Java centers around four main pillars:
+
+- Encapsulation: Packing data (fields) and methods that operate on the data into classes and restricting direct access using access modifiers (`private`, `protected`, `public`). Use getters/setters to control access.
+- Inheritance: Creating new classes from existing ones to reuse code (`extends`) and form class hierarchies.
+- Polymorphism: Ability to call the same method on different objects and get behavior specific to the object's runtime type (method overriding). Also method overloading is compile-time polymorphism.
+- Abstraction: Hiding complex implementation details and exposing simple interfaces (abstract classes, interfaces, and public methods).
+
+Additional Java points in this folder:
+
+- Exception handling: use `try-catch-finally` and custom exceptions to handle errors gracefully.
+- Multithreading: create concurrent programs with `Thread` and `Runnable`, synchronize access to shared resources to prevent race conditions.
+
+## Theory — C++
+
+C++ supports OOP as well and has its own idioms and features:
+
+- Encapsulation: achieve with `private`/`protected`/`public` sections inside classes and use member functions to interact with private data.
+- Inheritance: single, multiple, and multilevel inheritance are available; use constructors and initializer lists for proper construction.
+- Polymorphism: virtual functions and pointers/references enable runtime polymorphism. Function overloading provides compile-time polymorphism.
+- Abstraction: abstract base classes (pure virtual functions) define interfaces.
+
+Additional C++ points in this folder:
+
+- Exception handling: `try`, `catch` and `throw` exist in C++ but are used less pervasively; prefer RAII for resource management.
+- File handling: use file streams (`std::ifstream`, `std::ofstream`) for I/O operations.
+- Memory and resource management: be mindful of ownership; prefer smart pointers (`std::unique_ptr`, `std::shared_ptr`) in modern C++.
 
 Feel free to explore and modify the code to deepen your understanding of OOP principles!
