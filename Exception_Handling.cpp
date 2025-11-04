@@ -5,7 +5,6 @@ Throw and catch exceptions for the following cases:
 -> Invalid input (non-numeric value)
    Use multiple catch blocks and display proper messages.
 */
-
 #include <iostream>
 #include <stdexcept>
 using namespace std;
@@ -14,7 +13,7 @@ int main()
 {
    try
    {
-      int a,b;
+      double a,b;
 
       cout<<endl;
       cout<<"Enter the First Number: ";
@@ -29,12 +28,6 @@ int main()
          throw invalid_argument("Invalid Input.Please Enter a Number");
       }
 
-
-      if(!(cin.fail()))
-      {
-         throw invalid_argument("Invalid Input.Please Enter a Number");
-      }
-
       if(b==0)
       {
          throw(b);
@@ -42,7 +35,7 @@ int main()
 
       else
       {
-         int c=a/b;
+         double c=a/b;
          cout<<"Division Result: "<<c<<endl;
          cout<<endl;
       }
